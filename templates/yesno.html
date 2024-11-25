@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+    <title>Odpowiedź z API</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+        .result {
+            font-size: 50px;
+            font-weight: bold;
+            padding: 20px;
+            color: white;
+            border-radius: 8px;
+            background-color: {{ color }}; 
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="result">
+        {{ answer }}  <!-- Tutaj jest dynamiczna zmiana tekstu -->
+    </div>
+</body>
+</html>

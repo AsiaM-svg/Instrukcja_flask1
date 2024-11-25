@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+    <title>Formularz</title>
+</head>
+<body>
+    <h1>Formularz</h1>
+    <form method="POST" action="/result">
+        <label for="name">Imię:</label>
+        <!-- Walidacja: tylko litery (a-z, A-Z) -->
+        <input type="text" id="name" name="name" pattern="[A-Za-z]+" title="Imię powinno zawierać tylko litery" required><br><br>
+
+        <label for="surname">Nazwisko:</label>
+        <!-- Walidacja: tylko litery (a-z, A-Z) -->
+        <input type="text" id="surname" name="surname" pattern="[A-Za-z]+" title="Nazwisko powinno zawierać tylko litery" required><br><br>
+
+        <label for="age">Wiek:</label>
+        <!-- Walidacja: tylko liczby (od 1 wzwyż) -->
+        <input type="number" id="age" name="age" min="1" required><br><br>
+
+        <input type="submit" value="Wyślij">
+    </form>
+</body>
+</html>
